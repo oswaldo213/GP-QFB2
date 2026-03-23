@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang ="es">
+    <head> <link rel="stylesheet" href="style.css"><title>GP-QFB</title></head>
+    <body class="page_login">
+        <div class="login">
+            <h1>ISSSTE</h1>
+          
+            <div class="login-subtitles">
+                    <span class="bold-text">Iniciar sesión</span>
+                    <span class="system-name">Sistema de Gestión de Pasantes</span>
+                    <!-- span es como un contenedor -->
+            </div>
+
+
+            <form action="Dashboard.html" id="login_info">
+                    <label for="username">Correo electrónico/numero de celular:</label>
+                   
+                    <div class="input-container">
+                        <span class="input-icon">✉️</span> <input type="text" placeholder="Correo o número de celular" id="login_indentity">
+                    </div>
+                    
+                    <label for="password">Password:</label>
+                    
+                    <div class="input-container">
+                        <span class="input-icon">🔒</span> <input type="password" placeholder="••••••••" id="pass">
+                    </div>
+                
+                    <a href="olvide_contraseña.html" id="olvidar_contraseña">¿Olvidaste tu contraseña?</a>
+
+                    <input type="submit" value="Iniciar sesión">
+
+                    <div class="google-auth-container">
+                        <div class = "diver">
+                            <span>o</span>
+                        </div>
+                       <button type="button" class="google-btn" onclick="window.location.href='https://accounts.google.com'">
+                        <img id = "logo_google" src="https://www.google.com/favicon.ico">
+
+                        Iniciar sesión con Google
+                        </button>
+                    </div>
+
+                    
+
+
+            </form>
+           
+        </div>
+    </body>
+</html>
