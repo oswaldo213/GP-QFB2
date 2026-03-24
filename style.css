@@ -253,4 +253,121 @@ input[type = "submit"][value = "Iniciar sesión"] {
     display: block; /* Para que ocupe toda la superficie del menú */
 }
 
+.page_Distribucion {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    
+}
 
+.main-container {
+    display: flex; /* Sidebar a la izquierda, resto a la derecha */
+    width: 100%;
+    min-height: 100vh;
+}
+
+.right-section {
+    flex: 1; /*para ocupar todo el lado restante */
+    display: flex;
+    
+    flex-direction: column; /* top bar arriba y el content abajo */
+}
+
+.search-container {
+    position: relative; /* es para decir que lo que contenge se base en la posicion del contexto y no en una general */
+    /*se vuelve punto de referencia para sus hijos yeaaa */
+    width: 400px; 
+    display: block;
+}
+
+.search-icon{
+    position: absolute; /*para que no tomen en cuenta la existencia*/
+    left: 15px;
+    top: 50%; /*para poner a la mitad de la altura */
+    transform: translateY(-50%);/* usada con top para cuadrar algo a la mitad exactacta */
+    color: #a0aec0;
+    font-size: 14px;
+}
+
+input[type = "text"][id = "global-search"]{
+    padding-left: 40px;
+    font-size: 15px;
+}
+.top-bar {
+    background-color: white;
+    padding: 15px 30px;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0; 
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8fafc; /* color de fondo para diferenciar del buscador */
+}
+
+#titulo_dashboard{
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#subtitulo_dashboard{
+     background-color: rgb(255, 255, 255);
+    font-size: 15px;
+    color: #718096; /* Gris para el subtítulo */
+}
+
+.titulo-dashboard-container{ /*para separar el contenedor de los cuadros*/
+    margin-bottom: 10px;
+}
+
+.cuadros-dashboard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    margin-left: 30px;
+}
+
+.card{
+    border: 1px solid #00bfa5;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+    padding: 50px 10px;
+    margin-right: 30px;
+}
+
+.card:hover { /*hover de ? */ 
+    transform: translateY(-5px); /* Efecto sutil al pasar el mouse */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card-title {
+    color: #718096;
+    display: block;
+    margin-bottom: 5px
+}
+
+.card-value{
+    font-size: 24px;
+    font-weight: 800;
+    color: #1a202c;
+    margin: 0;
+    display: block;
+}
+
+.card-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+
+}

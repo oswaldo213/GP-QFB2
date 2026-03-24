@@ -5,12 +5,66 @@
         <title>GP-QFB</title>
     </head>
     <body class="page_dashboard">
-        <div class="dashboard">
-            <div id="sidebar-placeholder"></div> <!--preparando el espacio-->
+        <div class="main-container">
+        <div id="sidebar-placeholder"></div> <!--reservar el espacio para la sidebar-->
 
-                <main class="content">
+        <div class="right-section"> <!-- div para la derecha-->
+            
+            <header class="top-bar"> <!--top-->
+                <div class="search-container">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Buscar" id="global-search">
+                </div>
+                <div class="user-profile"></div>
+            </header>
+
+            <main class="content">
+                <div class="titulo-dashboard-container">
+                    <h1 id="titulo_dashboard">Dashboard</h1>
+                    <a id="subtitulo_dashboard">Sistema de Gestión de Pasantes ISSSTE</a>
+                </div>
+
+                <section class = "cuadros-dashboard"> <!--es para agrupar contenido comun-->
+                        <!-- es como limitar una espacio en la pagina-->
+                    <div class ="card">
+                      
+                        <div class="card-info">
+                        <!--contenedores flexibles para alojar varios tipos de datos-->
+                        <span class = "card-title">Pasantes activos</span>
+                        <!--sitve para contenedor de una linea-->
+                        <h3 class = "card-value">124</h3>
+                        </div>
+                        <div class="card-icon blue">👤</div>
+                    </div>
+
+                    <div class ="card">
+                        <div class="card-info">
+                        <!--contenedores flexibles para alojar varios tipos de datos-->
+                        <span class = "card-title">Tratos hechos</span>
+                        <!--sitve para contenedor de una linea-->
+                        <h3 class = "card-value">1</h3>
+                        </div>
+                        <div class="card-icon green">6</div>
+                    </div>
+
+                     <div class ="card">
+                        <div class="card-info">
+                        <!--contenedores flexibles para alojar varios tipos de datos-->
+                        <span class = "card-title">Evaluaciones Pendientes</span>
+                        <!--sitve para contenedor de una linea-->
+                        <h3 class = "card-value">1</h3>
+                        </div>
+                        <div class="card-icon green">6</div>
+                    </div>
+                   
+                </section>
+               
+                
                 </main>
-            </div>
-            <script src="load-sidebar.js"></script>
         </div>
-    </body>
+      
+    </div>
+
+    <script src="load-sidebar.js"></script>
+        </div>
+    </body
