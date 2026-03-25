@@ -338,6 +338,7 @@ input[type = "text"][id = "global-search"]:hover{
     gap: 20px;
     padding: 30px 0;
     margin-left: 50px;
+
 }
 
 .card{
@@ -395,7 +396,7 @@ input[type = "text"][id = "global-search"]:hover{
 
 
 .cuadro-debajo{
-
+    padding: auto  20px;
     border: 1px solid #00bfa5;
     border-radius: 12px;
 }
@@ -403,10 +404,45 @@ input[type = "text"][id = "global-search"]:hover{
 .Titulo-de-cuadro{
     display: block;
     padding: 0px 20px;
+    margin-top: 5px;
     color: #4a5568;
 }
 
 .fila-pasante{
     padding: auto 20px;
     display: flex;
+    border: 1px solid #00bfa5;
+    border-radius: 12px;
+    margin-bottom: 10px;
+
+}
+
+.fila-pasante:hover{
+    transform: translateY(-4px); /* Efecto sutil al pasar el mouse */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    background-color: #26e8ce;
+    transition: 0.3s; /* IMPORTANTE: Para que el movimiento sea suave y no un brinco */
+}
+
+.user-info{
+    display:flex;
+}
+
+.avatar-circle{
+    margin-right: 10px;
+    padding:20px;
+}
+
+.user-details{
+   margin-top: 20px; 
+   margin-right: 10px;
+
+}
+
+.area-tag{
+    margin-top: 20px;
+}
+
+.espacio-cuadro-filas{
+   padding:20px 10px;
 }
