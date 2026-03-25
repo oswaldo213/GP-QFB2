@@ -238,7 +238,7 @@ input[type = "submit"][value = "Iniciar sesión"] {
 }
 
 .menu-item.active {
-    background-color: #00bfa5; /* El turquesa de tu imagen */
+    background-color: #000000; /* El turquesa de tu imagen */
     color: white;
 }
 
@@ -270,6 +270,13 @@ input[type = "submit"][value = "Iniciar sesión"] {
     display: flex;
     flex-direction: column; /* top bar arriba y el content abajo */
 }
+
+#sidebar-placeholder {
+    width: 250px; /* El mismo ancho que tu sidebar real */
+    min-height: 100vh;
+    background-color: #fff; /* O el color de tu sidebar */
+}
+
 
 .search-container {
     position: relative; /* es para decir que lo que contenge se base en la posicion del contexto y no en una general */
@@ -414,7 +421,7 @@ input[type = "text"][id = "global-search"]:hover{
     border: 1px solid #00bfa5;
     border-radius: 12px;
     margin-bottom: 10px;
-
+    
 }
 
 .fila-pasante:hover{
@@ -446,3 +453,5 @@ input[type = "text"][id = "global-search"]:hover{
 .espacio-cuadro-filas{
    padding:20px 10px;
 }
+
+

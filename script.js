@@ -3,3 +3,25 @@ document.getElementById("myButton").addEventListener("click", function() {
 });
 
 
+function cargarContenido(url, elemento){
+
+    
+
+     fetch(url)
+        .then(res => res.text())
+        .then(html => {
+           const parser = new DOMParser(); //declaro un objeto de tipo DOM
+           //DOM es para la interaz de js 
+           const doc = parser.parseFromString(html,'text/html'); 
+           //es para convertir el texto que tiene el html en uno virtual
+
+           const nuevoContenido = doc.querySelector('.content').innerHTML; // ??
+            //estoy metiendo a nuevo contenido el contenido de la pagina que se cargara
+            document.querySelector('.content').innerHTML = nuevoContenido;
+            //aqui es para decir que el espacio del area .content original sera actualizado
+            window.history.pushState({},'',url);
+            //recargar el historia para que no recargue
+        })
+        .catch(error => console.error('Error al cargar:', error));
+}
+
