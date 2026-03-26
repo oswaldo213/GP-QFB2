@@ -190,13 +190,14 @@ input[type = "submit"][value = "Iniciar sesión"] {
 
 }
 
+
 .sidebar-header {
     background-color: rgb(255, 255, 255);
     padding: 20px;
     /* Esta es la línea divisoria */
     border-bottom: 1px solid #e2e8f0; 
     margin-bottom: 10px;
-    border-right: 1px solid #e2e8f0; /* Agrega un borde a la izquierda */
+
 }
 
 
@@ -215,11 +216,12 @@ input[type = "submit"][value = "Iniciar sesión"] {
 }
 
 .sidebar-menu {
+
     background-color: rgb(255s, 255, 255);
     padding: 10px;
-    border-right: 1px solid #e2e8f0;
-    margin-bottom: 10px; 
     text-decoration: none;
+
+    
 }
 
 
@@ -238,7 +240,7 @@ input[type = "submit"][value = "Iniciar sesión"] {
 }
 
 .menu-item.active {
-    background-color: #000000; /* El turquesa de tu imagen */
+    background-color: #00bfa5; /* El turquesa de tu imagen */
     color: white;
 }
 
@@ -263,6 +265,7 @@ input[type = "submit"][value = "Iniciar sesión"] {
     display: flex; /* Sidebar a la izquierda, resto a la derecha */
     width: 100%;
     min-height: 100vh;
+    
 }
 
 .right-section {
@@ -274,7 +277,7 @@ input[type = "submit"][value = "Iniciar sesión"] {
 #sidebar-placeholder {
     width: 250px; /* El mismo ancho que tu sidebar real */
     min-height: 100vh;
-    background-color: #fff; /* O el color de tu sidebar */
+    border-right: 1px solid #e2e8f0;
 }
 
 
@@ -311,14 +314,14 @@ input[type = "text"][id = "global-search"]:hover{
     background-color: white;
     padding: 15px 30px;
     border-bottom: 1px solid #e2e8f0;
-    display: flex;
+    display: flex;  border-right: 1px solid #e2e8f0; /* Agrega un borde a la izquierda */
     align-items: center;
     margin-bottom: 0; 
 }
 
 .content {
     flex: 1;
-    padding: 20px;
+    padding: 01%;
     background-color: #f8fafc; /* color de fondo para diferenciar del buscador */
 }
 
@@ -330,7 +333,7 @@ input[type = "text"][id = "global-search"]:hover{
 }
 
 #subtitulo_dashboard{
-     background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
     font-size: 15px;
     color: #718096; /* Gris para el subtítulo */
 }
@@ -341,11 +344,12 @@ input[type = "text"][id = "global-search"]:hover{
 
 .cuadros-dashboard{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
-    gap: 20px;
-    padding: 30px 0;
-    margin-left: 50px;
-
+    grid-template-columns: repeat(auto-fit, minmax(2.78%, 23%));
+    gap: 2%;
+    background-color: #f8fafc; 
+    padding-bottom: 5%;
+    padding-right: 0.01%;
+    padding-left: 1%;
 }
 
 .card{
@@ -355,7 +359,9 @@ input[type = "text"][id = "global-search"]:hover{
     justify-content: space-between;
     align-items: center;
     transition: transform 0.2s;
-    margin-right: 30px;
+    height: 140%;
+    width: 100%;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.07);
 }
 
 

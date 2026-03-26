@@ -3,9 +3,19 @@ document.getElementById("myButton").addEventListener("click", function() {
 });
 
 
-function cargarContenido(url, elemento){
+function cargarContenido(url,elemento){
 
-    
+    const todosLosItems = document.querySelectorAll('.menu-item');
+    todosLosItems.forEach(item => item.classList.remove('active'));
+
+    // 2. Si el usuario hizo clic en un elemento, le ponemos la clase 'active'
+    if (elemento) {
+        // Buscamos el padre <li> del <a> para ponerle el fondo negro
+        const liPadre = elemento.closest('.menu-item');
+        if (liPadre) {
+            liPadre.classList.add('active');
+        }
+    }
 
      fetch(url)
         .then(res => res.text())
@@ -14,7 +24,8 @@ function cargarContenido(url, elemento){
            //DOM es para la interaz de js 
            const doc = parser.parseFromString(html,'text/html'); 
            //es para convertir el texto que tiene el html en uno virtual
-
+           
+           
            const nuevoContenido = doc.querySelector('.content').innerHTML; // ??
             //estoy metiendo a nuevo contenido el contenido de la pagina que se cargara
             document.querySelector('.content').innerHTML = nuevoContenido;
