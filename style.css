@@ -196,7 +196,7 @@ input[type = "submit"][value = "Iniciar sesión"] {
     padding: 20px;
     /* Esta es la línea divisoria */
     border-bottom: 1px solid #e2e8f0; 
-    margin-bottom: 10px;
+
 
 }
 
@@ -217,11 +217,10 @@ input[type = "submit"][value = "Iniciar sesión"] {
 
 .sidebar-menu {
 
-    background-color: rgb(255s, 255, 255);
-    padding: 10px;
+    background-color: rgb(255, 255, 255);
     text-decoration: none;
-
-    
+    position: relative;
+    padding-right: 15%;
 }
 
 
@@ -229,19 +228,49 @@ input[type = "submit"][value = "Iniciar sesión"] {
 .menu-item {
     list-style: none;
     background-color: transparent;
-    padding: 10px;
-    margin-bottom: 5px;
+    flex: 1;
+    width: 111%;
+    height: 3rem;
+    margin-bottom: 10%;
     border-radius: 8px;
     color: #4a5568;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     transition: 0.3s;
+    position: relative;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del elemento padre */
+    display: flex;
 
 }
+
+.menu-icon{
+    width: 20%;
+    height: 80%;
+    object-fit: contain; /* Evita que la imagen se deforme */
+    background-color: transparent; /* Asegúrate de que no herede fondos raros */
+    position: absolute; /*para que no tomen en cuenta la existencia*/
+    margin-left: 3%;
+    top: 10%;
+
+
+}
+
+.name-for-sidebar{
+    padding-left: 25%;
+    padding-top: 7%;
+    font-family: 'Inter', sans-serif;
+   
+}
+
 
 .menu-item.active {
     background-color: #00bfa5; /* El turquesa de tu imagen */
     color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.09);;
 }
 
 /* Efecto al pasar el mouse sobre los otros botones */
@@ -249,11 +278,7 @@ input[type = "submit"][value = "Iniciar sesión"] {
     background-color: #edf2f7;
 }
 
-.menu-item a {
-    text-decoration: none;
-    color: inherit; /* Hereda el color del elemento padre */
-    display: block; /* Para que ocupe toda la superficie del menú */
-}
+
 
 .page_Distribucion {
     background-color: rgb(255, 255, 255);
@@ -427,14 +452,14 @@ input[type = "text"][id = "global-search"]:hover{
     border: 1px solid #00bfa5;
     border-radius: 12px;
     margin-bottom: 10px;
-    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
 .fila-pasante:hover{
     transform: translateY(-4px); /* Efecto sutil al pasar el mouse */
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    background-color: #26e8ce;
-    transition: 0.3s; /* IMPORTANTE: Para que el movimiento sea suave y no un brinco */
+    background-color: #eef2f2;
+    transition: 0.3s; /* Para que el movimiento sea suave y no un brinco */
 }
 
 .user-info{
@@ -458,6 +483,22 @@ input[type = "text"][id = "global-search"]:hover{
 
 .espacio-cuadro-filas{
    padding:20px 10px;
+}   
+
+
+.page_Calendario{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.page_Ranking{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.page_Evaluaciones{
+    background-color: rgb(255, 255, 255);
+    display: flex;
 }
 
 
