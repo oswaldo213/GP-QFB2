@@ -1,0 +1,139 @@
+
+
+.sidebar-header {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    /* Esta es la línea divisoria */
+    border-bottom: 1px solid #e2e8f0; 
+
+
+}
+
+
+.sidebar-header h2 {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    color: #1a202c;
+}
+
+.sidebar-header span {
+    background-color: rgb(255, 255, 255);
+    font-size: 12px;
+    color: #718096; /* Gris para el subtítulo */
+}
+
+.sidebar-menu {
+
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    position: relative;
+    width: 85%;
+    padding-right: 15%;
+    
+}
+
+
+
+.menu-item {
+    list-style: none;
+    background-color: transparent;
+    flex: 1;
+    width: 111%;
+    height: 4rem;
+    margin-bottom: 10%;
+    border-radius: 8px;
+    color: #4a5568;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: 0.3s;
+    position: relative;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del elemento padre */
+    display: flex;
+    padding-left: 25%;
+    padding-top: 10%;
+    
+}
+
+#link-inde {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del elemento padre */
+    display: flex;
+    padding-left: 25%;
+    padding-top: 6%;
+}
+
+.menu-item b {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del elemento padre */
+    display: flex;
+    padding-left: 25%;
+    padding-top: 7%;
+}
+
+.menu-icon{
+    width: 20%;
+    height: 80%;
+    object-fit: contain; /* Evita que la imagen se deforme */
+    background-color: transparent; /* Asegúrate de que no herede fondos raros */
+    position: absolute; /*para que no tomen en cuenta la existencia*/
+    margin-left: 3%;
+    top: 10%;
+}
+
+
+.menu-item.active {
+    background-color: #00bfa5; /* El turquesa de tu imagen */
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.09);;
+}
+
+/* Efecto al pasar el mouse sobre los otros botones */
+.menu-item:hover:not(.active) {
+    background-color: #edf2f7;
+}
+
+.search-container {
+    position: relative; /* es para decir que lo que contenge se base en la posicion del contexto y no en una general */
+    /*se vuelve punto de referencia para sus hijos yeaaa */
+    width: 400px; 
+    display: block;
+}
+
+.search-icon{
+    position: absolute; /*para que no tomen en cuenta la existencia*/
+    left: 15px;
+    top: 50%; /*para poner a la mitad de la altura */
+    transform: translateY(-50%);/* usada con top para cuadrar algo a la mitad exactacta */
+    color: #a0aec0;
+    font-size: 14px;
+}
+
+input[type = "text"][id = "global-search"]{
+    padding-left: 40px;
+    font-size: 15px;
+    border-radius: 12px;
+}
+
+input[type = "text"][id = "global-search"]:hover{
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Un poco más de sombra para que se note */
+    transition: 0.3s; /* IMPORTANTE: Para que el movimiento sea suave y no un brinco */
+}
+
+
+
+input[type = "text"], input[type = "password"] #global-search{
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+

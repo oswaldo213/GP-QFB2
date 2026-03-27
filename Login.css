@@ -1,0 +1,153 @@
+
+.page_login {
+    background-color: rgb(243, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.login {
+    /* width: 300px; esto es para limitar el espacio pero no lo quiero debido al color de fondo */
+    margin: 0 auto;
+    text-align: center;
+    height: 400px;
+}
+
+.login h1 {
+
+    width: fit-content;
+    margin-left: auto;  /* Estos dos márgenes sirven para */
+    margin-right: auto; /* centrarlo si usas fit-content */
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    border: 10px solid turquoise;
+    border-radius: 7px;
+    padding: 5px 15px;
+    background-color: turquoise;
+}
+
+.system-name {
+    color: rgb(108, 107, 107);
+}
+
+#login_info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    padding: 20px; /* Espacio interno para que no quede tan pegado al borde */
+}
+
+label[for ="password"], label[for ="username"] {
+    margin-top: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 0px;
+    text-align: left;
+    font-size: 14px;
+
+}
+
+input[type = "text"], input[type = "password"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.input-icon {
+    position: absolute;
+    left: 12px;           /* Distancia desde el borde izquierdo */
+    top: 50%;             /* para centrar */
+    transform: translateY(-50%);
+    color: #a0aec0;       /* Gris copiando a figma bro */
+    pointer-events: none; /* quitamos evento porque no sirve para eso  */
+    background-color: transparent;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px 12px 12px 40px; /* El padding izquierdo (40px) deja espacio para el icono */
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+
+#olvidar_contraseña{
+    background-color: rgb(255,255, 255);
+    text-align: right;
+    font-size: 14px;
+    color: #4a5568;
+    border: none;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    display: block; /* Para que ocupe toda la línea y se alinee a la derecha */
+}
+
+input[type = "submit"][value = "Iniciar sesión"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    color: turquoise;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    display: block;
+}
+
+
+.google-auth-container{
+    background-color: rgb(255, 255, 255);
+    border: blue;
+    margin: 8px auto 10px;
+    display: block;    
+}
+
+.diver{
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+.diver span {
+    background-color: rgb(255, 255, 255);
+    padding: 0 10px;
+    color: #4a5568;
+}
+
+#logo_google {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle; /* Para alinear el logo con el texto */
+    background-color: transparent;
+    
+}
+
+.google-btn {
+    margin: 8px auto 0;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    padding: 10px 40px;
+    cursor: pointer;
+    display: block;
+    font-family: 'Inter', sans-serif;
+    
+}
