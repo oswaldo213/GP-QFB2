@@ -101,11 +101,18 @@
     background-color: #edf2f7;
 }
 
+.top-bar{
+    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+}
+
 .search-container {
+    background-color: #1757d8;
     position: relative; /* es para decir que lo que contenge se base en la posicion del contexto y no en una general */
     /*se vuelve punto de referencia para sus hijos yeaaa */
-    width: 400px; 
-    display: block;
+    width: 300px; /* para limitar el espacio de la barra de busqueda*/
+    margin-right: 100px; /*prrueba */
 }
 
 .search-icon{
@@ -117,26 +124,30 @@
     font-size: 14px;
 }
 
-input[type = "text"][id = "global-search"]{
-    padding-left: 40px;
-    font-size: 15px;
-    border-radius: 12px;
-}
-
 input[type = "text"][id = "global-search"]:hover{
     transform: translateY(-5px); 
     box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Un poco más de sombra para que se note */
     transition: 0.3s; /* IMPORTANTE: Para que el movimiento sea suave y no un brinco */
 }
 
-
-
-input[type = "text"], input[type = "password"] #global-search{
+#global-search{
     padding: 10px;
-    width: 300px;
+    width: 100%;
     border: 1px solid #ccc;
-    border-radius: 5px;
     margin-top: 5px;
+    padding-left: 40px;
+    font-size: 15px;
+    border-radius: 12px;
+}
+
+.user-profile{
+    position: relative;
+    align-items: right;
+    justify-content: right;
+}
+
+#perfil-icon{
+    width: 20%;
 }
 
 
