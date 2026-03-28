@@ -1,24 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 
 .page_dashboard {
     background-color: rgb(255, 255, 255);
-    display: flex;
-    
+      
 
 }
 
 
 .main-container {
     display: flex; /* Sidebar a la izquierda, resto a la derecha */
-    width: 100%;
+   
     min-height: 100vh;
-    
+
 }
 
 .right-section {
     flex: 1; /*para ocupar todo el lado restante */
-    display: flex;
     flex-direction: column; /* top bar arriba y el content abajo */
+    width: calc(100% - 250px);
 }
 
 
@@ -29,18 +33,9 @@
     border-right: 1px solid #e2e8f0;
 }
 
-.top-bar {
-    background-color: white;
-    padding: 15px 30px;
-    border-bottom: 1px solid #e2e8f0;
-    display: flex;  border-right: 1px solid #e2e8f0; /* Agrega un borde a la izquierda */
-    align-items: center;
-    margin-bottom: 0; 
-}
 
 .content {
-    flex: 1;
-    padding: 01%;
+    padding: 30px;
     background-color: #f8fafc; /* color de fondo para diferenciar del buscador */
 }
 
@@ -61,36 +56,29 @@
     margin-bottom: 10px;
 }
 
+
+
+
+
 .cuadros-dashboard{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(2.78%, 23%));
-    gap: 2%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     background-color: #f8fafc; 
-    padding-bottom: 5%;
-    padding-right: 0.01%;
-    padding-left: 1%;
+    margin-bottom: 30px;
 }
 
 .card{
     border: 1px solid #00bfa5;
     border-radius: 12px;
-    display: block;
-    justify-content: space-between;
-    align-items: center;
     transition: transform 0.2s;
-    height: 140%;
     width: 100%;
-     box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.07);
 }
 
 
-.top-de-cuadro{
-    padding: 50px ;
-    margin-top: 10px;
-    margin-bottom: 50px;
-    margin-left: 30px;
-    padding: 10px 40px;
-}
+
 
 .medio-de-cuadro{
     margin-bottom: 40px;
@@ -128,20 +116,20 @@
 
 
 .cuadro-debajo{
-    padding: auto  20px;
+    width: 100%;
     border: 1px solid #00bfa5;
     border-radius: 12px;
+    background-color: #ffffff;
 }
 
 .Titulo-de-cuadro{
     display: block;
     padding: 0px 20px;
-    margin-top: 5px;
+    padding-top: 10px;
     color: #4a5568;
 }
 
 .fila-pasante{
-    padding: auto 20px;
     display: flex;
     border: 1px solid #00bfa5;
     border-radius: 12px;
