@@ -56,7 +56,8 @@
 
 .menu-item a {
     text-decoration: none;
-    color: inherit; /* Hereda el color del elemento padre */
+
+    color: rgb(45, 42, 42); /* Hereda el color del elemento padre */
     display: flex;
     padding-left: 25%;
     padding-top: 10%;
@@ -73,7 +74,7 @@
 
 .menu-item b {
     text-decoration: none;
-    color: inherit; /* Hereda el color del elemento padre */
+    color: rgb(45, 42, 42); /* Hereda el color del elemento padre */
     display: flex;
     padding-left: 25%;
     padding-top: 7%;
@@ -95,6 +96,16 @@
     color: white;
     box-shadow: 0 10px 20px rgba(0,0,0,0.09);;
 }
+
+
+.menu-item.active a {
+    color: white;
+}
+
+.menu-item.active b {
+    color: white;
+}
+
 
 /* Efecto al pasar el mouse sobre los otros botones */
 .menu-item:hover:not(.active) {
@@ -124,13 +135,13 @@
 
 }
 
-.search-icon{
+#search-icon{
     position: absolute; /*para que no tomen en cuenta la existencia*/
     left: 15px;
     top: 50%; /*para poner a la mitad de la altura */
     transform: translateY(-50%);/* usada con top para cuadrar algo a la mitad exactacta */
     color: #a0aec0;
-    font-size: 14px;
+    font-size: 1.5rem;
 }
 
 input[type = "text"][id = "global-search"]:hover{
@@ -141,17 +152,25 @@ input[type = "text"][id = "global-search"]:hover{
 
 #global-search{
     padding: 10px;
-    width: 100%;
+    width: 150%;
     border: 1px solid #ccc;
-    padding-left: 40px;
+    padding-left: 50px;
     font-size: 15px;
     border-radius: 12px;
 }
 
-.user-profile{
+.perfil{
+    position: relative;
     display: flex;
+    background-color: #1a202c;
+}
+
+.user-profile{
+
     align-items: center;
     background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 #perfil-icon{
@@ -159,6 +178,27 @@ input[type = "text"][id = "global-search"]:hover{
     height: 50px;
     object-fit: cover; /*esto es para?*/
     border-radius: 50%;
+}
+
+.menu-item.active .material-symbols-outlined {
+    color: #ffffff;           /* Tu color turquesa */
+    font-size: 30px;          /* Ajusta el tamaño del icono */
+    position: absolute; /*para que no tomen en cuenta la existencia*/
+    margin-left: 10px;
+    top: 15px;
+}
+
+.menu-item .material-symbols-outlined {
+    color:rgb(87, 82, 82);           /* Tu color turquesa */
+    font-size: 30px;          /* Ajusta el tamaño del icono */
+    position: absolute; /*para que no tomen en cuenta la existencia*/
+    margin-left: 10px;
+    top: 15px;
+}
+
+.fa-solid{
+    color: white;       /* Para que resalten sobre los fondos de colores */
+    font-size: 1.2rem;
 }
 
 

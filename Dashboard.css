@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-
 .page_dashboard {
     background-color: rgb(255, 255, 255);
       
@@ -169,3 +168,21 @@
 }   
 
 
+
+.material-symbols-outlined {
+    color: #00bfa5;           /* Tu color turquesa */
+    font-size: 30px;          /* Ajusta el tamaño del icono */
+    vertical-align: middle;   /* Para que se alinee bien con el texto */
+    font-variation-settings:
+      'FILL' 0,               /* 0 para icono lineal, 1 para relleno */
+      'wght' 400,             /* Grosor de la línea (100 a 700) */
+      'GRAD' 0,
+      'opsz' 24;
+}
+
+
+.card:hover .material-symbols-outlined {
+    color: #008f7a;           /* Un turquesa más oscuro al pasar el mouse */
+    transform: scale(1.1);    /* Un pequeño efecto de crecimiento */
+    transition: 0.3s;
+}
