@@ -1,0 +1,34 @@
+.main-container {
+   display: flex; /* Sidebar a la izquierda, resto a la derecha */
+   
+    min-height: 100vh;
+
+}
+
+.titulo-distribucion-container{
+    background-color: white;
+}
+
+.medio{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 140px;
+    color: #e2e8f0;
+
+}
+
+.distribuir {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 1rem;
+    padding: 10px 120px;
+    
+}
+
+#nombre_boton_distribuir{
+    margin-left: 15px;
+}

@@ -8,37 +8,43 @@
 
     <nav class="sidebar-menu">
         <ul>
-            <li class="menu-item active" onclick="cargarContenido('Dashboard.html',this)">
-                    <span class="material-symbols-outlined">dashboard</span>
-                    <a id="link-index">
-                        Dashboard
-                    </a>
+            <li class="menu-item active">
+                <a href = "#/Dashboard" class="menu-link">
+                    <span class="material-symbols-outlined" id="simbolo">dashboard</span>
+                    <span id = "a2">Dashboard</span>
+                </a>
+            </li> 
+            <li class="menu-item">
+                <a href = "#/distribucion" class="menu-link">
+                    <span class="material-symbols-outlined">map</span>
+                    <span id = "b">Distribución de Pasantes</span>
+                </a>
             </li>
-            <!-- estan separados porque asi se toman como dos clases para el mismo objeto-->
+
             
-            <li class="menu-item" onclick="cargarContenido('Distribucion.html',this)">
-                      <span class="material-symbols-outlined">map</span>
-                    <a id="link-inde">
-                        Distribucion de Pasantes
-                    </a>
-            </li>
              <li class="menu-item"onclick="cargarContenido('calendario.html',this)">
-                     <span class="material-symbols-outlined">calendar_today</span>
-                    <a id="link-index">
+                    <a href = "#/Dashboard" class="menu-link">
+                    <span class="material-symbols-outlined">calendar_today</span>
+                    <span id = "a2">
                         Calendario
+                    </span>
                     </a>
             </li>
 
            <li class="menu-item" onclick="cargarContenido('evaluaciones.html',this)"> 
-                     <span class="material-symbols-outlined">assignment_turned_in</span>
-                    <a id="link-index">
-                        Evaluación
+                    <a href = "#/Dashboard" class="menu-link">
+                        <span class="material-symbols-outlined">assignment_turned_in</span>
+                        <span id="a2">
+                            Evaluación
+                        </span>
                     </a>
             </li>
             <li class="menu-item" onclick="cargarContenido('ranking.html',this)">
-                  <span class="material-symbols-outlined">emoji_events</span>
-                    <a id="link-index">
-                        Ranking
+                    <a href = "#/Dashboard" class="menu-link">
+                        <span class="material-symbols-outlined">emoji_events</span>
+                        <span id="a2">
+                            Ranking
+                        </span>
                     </a>
             </li>
         </ul>
