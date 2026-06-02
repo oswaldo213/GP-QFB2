@@ -1,34 +1,64 @@
 .main-container {
-   display: flex; /* Sidebar a la izquierda, resto a la derecha */
-   
+    display: flex;
     min-height: 100vh;
-
 }
 
-.titulo-distribucion-container{
+.titulo-distribucion-container {
     background-color: white;
 }
 
-.medio{
-    
+.medio {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 140px;
+    margin-top: 30px;
     color: #e2e8f0;
-
 }
 
 .distribuir {
-    display: flex; 
+    display: flex;
     align-items: center;
     justify-content: center;
-    
     font-size: 1rem;
     padding: 10px 120px;
+}
+
+#nombre_boton_distribuir {
+    margin-left: 15px;
+}
+
+.tarjetas-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 60%;
+    margin: 20px auto;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tarjeta-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color : #00bfa5;
     
 }
 
-#nombre_boton_distribuir{
-    margin-left: 15px;
+.icono-area {
+    background-color: #e0f5f1;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.tarjeta-pasante {
+    color: #555;
+    margin-left: 10px;
 }
